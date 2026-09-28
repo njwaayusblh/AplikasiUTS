@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="VisualLintBounds">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/universitas_tadulako"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:ignore="VisualLintSystemUi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/fakultas_teknik_jurusan_teknologi_informasi_nprodi_sistem_informasi"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:autofillHints=""
+        android:background="@android:drawable/editbox_background"
+        android:drawableEnd="@android:drawable/ic_menu_search"
+        android:hint="@string/cari_anggota_nama_nim_prodi"
+        android:inputType="TODO"
+        android:padding="10dp"
+        tools:ignore="TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <ListView
+        android:id="@+id/listViewAnggota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        tools:listitem="@layout/item_anggota"
+        tools:itemCount="3"/>
+</LinearLayout>
